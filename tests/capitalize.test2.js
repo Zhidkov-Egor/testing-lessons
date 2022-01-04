@@ -8,12 +8,3 @@ import { capitalize } from '../src/capitalize.js';
 // При таком способе вывод сообщения об ошибке крайне неинформативный.
 assert(capitalize('') === '');
 assert(capitalize('hello') === 'Hello');
-
-
-
-// Первый параметр actual – то, что пришло
-// Второй параметр expected – то, что ожидает тест
-// Правильный порядок аргументов имеет большое значение при анализе ошибки
-assert.strictEqual(capitalize(''), '');
-assert.strictEqual(capitalize('hello'), 'Hello');
-assert.strictEqual(capitalize('hello'), 'hello');
